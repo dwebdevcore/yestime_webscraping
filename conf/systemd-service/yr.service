@@ -1,0 +1,14 @@
+[Unit]
+Description=uWSGI instance to serve yestime-recommmender
+After=network.target
+
+[Service]
+User=yr
+Group=www-data
+WorkingDirectory=/home/yr/yestime-recommender
+Environment="PATH=/home/yr/yestime-recommender/venv/bin"
+ExecStart=/home/yr/yestime-recommender/venv/bin/uwsgi --ini conf/uwsgi/yestime-recommender.ini
+
+[Install]
+WantedBy=multi-user.target
+

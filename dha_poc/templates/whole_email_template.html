@@ -1,0 +1,371 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Email Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+
+    <style>
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-size: 14px;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 2px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #FFF;
+            max-width: 600px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        table tbody tr td,
+        table tbody tr,
+        table tbody,
+        table {
+            display: block;
+        }
+        img.resize {
+            width: 100% !important;
+            height: auto !important;
+            float: inherit !important;
+        }
+        #header, #content11, #footer {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        #header {
+        }
+
+        #header.alignrows td {
+            width: 100%;
+        }
+
+        #header.alignrows hr {
+            border: none;
+            height: 1px;
+            background: #fff;
+            width: 250px;
+            margin: 2px auto 5px;
+        }
+
+        #header.alignrows span {
+            font-size: 11px;
+        }
+
+        #header.alignrows h1 {
+            font-weight: 500;
+            font-size: 36px;
+        }
+
+        #header.alignrows h2 {
+            font-weight: 500;
+            font-size: 21px;
+        }
+
+        #header.alignrows a {
+            display: block;
+            color: #fff;
+            text-transform: uppercase;
+            text-decoration: none;
+            border: 2px solid #fff;
+            width: 109px;
+            margin: 36px auto 0;
+            padding: 6px 0;
+        }
+
+        #header.alignrows {
+            text-align: center;
+            color: #fff;
+        }
+
+        .cont_head h1 {
+            font-size: 33px;
+            text-transform: uppercase;
+            font-weight: 300;
+            margin-bottom: 10px;
+        }
+
+        .cont_head footer {
+            color: #1faa8d;
+            font-family: 'Pacifico', cursive;
+        }
+
+        .cont_head {
+            text-align: center;
+            padding: 50px 0 25px 0;
+                border: 1px solid #f3f3f3;
+        }
+
+        .blocktemp p{
+            font-size: 13px;
+            letter-spacing: 1px;
+            color: #1c1c1c;
+            line-height: 1.5;
+        }
+
+       .blocktemp {
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+
+        .blocktemp div.img_holder > div:first-child>img{
+            width: 100%;
+            height: auto;
+        }
+
+        .blocktemp div.img_holder > div:first-child {
+            display: inline-block;
+            max-width: 419px;
+            width: 69%;
+            margin-right: 5px;
+            background: #000;
+        }
+        .thumbnails{
+            width: 25%;
+        }
+
+        .blocktemp div.img_holder > div ul li:last-child {
+            margin: 0px;
+        }
+
+        .blocktemp div.img_holder > div ul li>img{
+            width: 100%;
+        }
+        .blocktemp div.img_holder > div ul li {
+            display: block;
+            width: 100%;
+            max-height: 96.5px;
+            margin-bottom: 10px;
+            background: #000;
+        }
+
+        .blocktemp div.img_holder > div ul {
+            list-style: none;
+        }
+
+        .blocktemp div.img_holder > div {
+            max-width: 150px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .clearfix:after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .h-offer strong{
+            float: right;
+            background: #1faa8d;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 500;
+            letter-spacing: 1px;
+            font-size: 14px;
+            padding: 3px 11px;
+            margin-top: 6px;
+            display: block;
+        }
+
+        .h-offer{
+            padding: 20px 0 15px;
+        }
+
+        .h-offer h2 img{
+            margin-top: 10px;
+        }
+
+        .h-offer h2{
+            font-size: 28px;
+            text-transform: uppercase;
+            font-weight: 300;
+            float: left;
+        }
+
+        .botombar a{
+            float: right;
+        }
+        .botombar h2 strike{
+            font-size: 22px;
+            color: #656565;
+            letter-spacing: 1px;
+            font-weight: 500;
+        }
+
+        .botombar h2 span{
+            display: block;
+            color: #20a0c3;
+            letter-spacing: 1px;
+            font-weight: 500;
+            margin-top: 5px;
+        }
+
+        .botombar a{
+            color: #1faa8d;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 17px;
+            text-decoration: none;
+            width: 167px;
+            border: 2px solid #1faa8d;
+            text-align: center;
+            padding: 9px 0;
+            margin-top: 20px;
+            background: #FFF;
+        }
+
+        .botombar h2 strong{
+            font-size: 40px;
+            color: #1faa8d;
+        }
+        .botombar h2{
+            float: left;
+            font-size: 40px;
+        }
+        .botombar{
+            margin: 10px 0 0;
+        }
+
+        #footer{
+            height: 230px;
+            background: url("https://s3-sa-east-1.amazonaws.com/test-enzo-1234/footer.png") #4c9c99;
+            background-position: center;
+            background-size: cover;
+            text-align: center;
+            padding: 50px;
+        }
+
+        #footer ul li{
+            display: inline-block;
+        }
+        #footer p{
+            color: #fff;
+            font-size: 13px;
+            margin: 20px;
+            letter-spacing: 1px;
+            line-height: 1.5;
+        }
+
+        #footer h2{
+            font-size: 22px;
+            color: #fff;
+            letter-spacing: 1px;
+            font-weight: 400;
+        }
+
+        #footer ul{
+            list-style: none;
+        }
+        .inline tr td{
+            display: inline-table;
+        }
+        .checkrow td{
+            display: inline-table;
+            color: red;
+        }
+        .checkrow{
+               margin: 25px 0 0px 0;
+        }
+        .chkbtn{
+               color: #ffffff;
+        font-size: 14px;
+        text-decoration: none!important;
+        border: 1px solid #15826b;
+        text-align: center;
+        padding: 10px 10px;
+        background: #1faa8d0;
+        }
+        .distantimg{
+                width: 20px;
+        margin: 0px 5px -9px 0px;
+        }
+        .box1{
+                margin: 25px 0 0px 0;
+        }
+
+
+        @media only screen and (max-width: 600px) {
+
+            .displaynone{
+                display: none!important;
+            }
+
+
+        }
+
+    </style>
+
+</head>
+<body>
+{% if context_id %}
+    <p>context_id: {{ context_id }}</p>
+{% endif %}
+
+<table id="header" class="x">
+    <tr>
+        <td>
+            <a href=""><img src="https://s3-sa-east-1.amazonaws.com/test-enzo-1234/header.jpg" class="resize" style="width:100%; max-width: 600px; height:auto; border:none; display:block" width="600"></a>
+        </td>
+    </tr>
+</table>
+
+<table id="content11" class="cont_head" style="max-width: 600px;">
+    <tr>
+        <td>
+            <h1>Find the Best Hotel DEALS</h1>
+            <footer>Special Offers For Limited Time Only</footer>
+
+        </td>
+
+    </tr>
+    <tr class="checkrow box1">
+
+        <td><a target="_blank" href="https://search.hotellook.com/?locationId={{ location_id }}&adults=2&language=en-US&currency=usd&_ga=2.149165750.1817712291.1495153264-1549267885.1495153264&marker=136741" class="chkbtn">Change Checkin/Checkout Time</a></td>
+
+    </tr>
+    <tr class="checkrow">
+         <td>Check-in: {{ args.check_in }}</td>
+        <td>Check-out: {{ args.check_out }}</td>
+    </tr>
+
+    </table>
+
+    <table id="content11">
+    <tr style="border-left: 1px solid #f3f3f3; border-right: 1px solid #f3f3f3;">
+        {% for pair in url_pairs %}
+        <td class="blocktemp">
+            <a target="_blank" href="{{ pair.data }}">
+                <img src="{{ pair.img }}" alt="" style="max-width: 100%;">
+            </a>
+        </td>
+        {% endfor %}
+    </tr>
+</table>
+
+<table id="footer" class="alignrows">
+    <tr>
+        <td>
+            <h2>Connect with Us</h2>
+            <p>Unit No.1, Park Name, Area name, State,<br> Country code.</p>
+            <ul>
+                <li><img src="https://s3-sa-east-1.amazonaws.com/test-enzo-1234/facebook.png" alt=""></li>
+                <li><img src="https://s3-sa-east-1.amazonaws.com/test-enzo-1234/twitter.png" alt=""></li>
+                <li><img src="https://s3-sa-east-1.amazonaws.com/test-enzo-1234/linkedin.png" alt=""></li>
+            </ul>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
+

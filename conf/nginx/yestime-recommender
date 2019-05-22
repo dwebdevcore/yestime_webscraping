@@ -1,0 +1,10 @@
+server {
+    listen 80;
+    server_name yesti.me;
+
+    location / {
+        include uwsgi_params;
+        uwsgi_pass unix:///home/yr/yestime-recommender/yr.sock;
+    }
+}
+

@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Email Template</title>
+  <link rel="stylesheet" href="/static/stylesheets/foundation-emails.css" />
+</head>
+
+
+<body>
+  <!-- <style> -->
+  <table class="body white-background" data-made-with-foundation>
+    <tr>
+      <td class="float-center" align="center" valign="top">
+        <center>
+            <table align="center" class="container">
+                <tbody>
+                    <tr>
+                        <td>
+                            <table class="row">
+                                <tbody>
+                                    <tr>
+                                        <th class="columns small-12 large-12 no-padding">
+                                          <table>
+                                            <tr>
+                                                <th>
+                                                    <center>
+                                                        <img src="https://s3-sa-east-1.amazonaws.com/test-enzo-1234/header.jpg" align="center" width="600px;" class="float-center">
+                                                    </center>
+                                                </th>
+                                                <th class="expander"></th>
+                                            </tr>
+                                          </table>
+                                        </th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="row left right bottom">
+                                <tbody>
+                                <tr>
+                                    <th class="columns small-12 large-12">
+                                        <table>
+                                            <tr>
+                                                <th>
+                                                    <table class="spacer">
+                                                        <tbody>
+                                                        <tr>
+                                                            <td height="20" style="font-size:20px;line-height:20px;"></td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <h1 class="text-center title">find the best hotels</h1>
+                                                    <p class="text-center subtitle">Special offers for limited time only</p>
+                                                    <center>
+                                                        <table class="button">
+                                                            <tr>
+                                                                <td>
+                                                                    <table>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <a target="_blank" href="https://search.hotellook.com/?locationId={{ location_id }}&adults=2&language=en-US&currency=usd&_ga=2.149165750.1817712291.1495153264-1549267885.1495153264&marker=136741">
+                                                                                    Change Checkin/Checkout Time
+                                                                                </a>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <table class="spacer">
+                                                            <tbody>
+                                                            <tr>
+                                                                <td height="10" style="font-size:10px;line-height:10px;"></td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </center>
+                                                    <p class="text-center red">Check-in: {{ args.check_in }} - Check-out: {{ args.check_out }}</p>
+                                                </th>
+                                                <th class="expander"></th>
+                                            </tr>
+                                        </table>
+                                    </th>
+                                </tr>
+                                </tbody>
+                            </table>
+                            {% for pair in url_pairs %}
+                            <table class="row left right">
+                              <tbody>
+                                <tr>
+                                    <th class="columns small-12 large-12">
+                                        <table>
+                                            <tr>
+                                                <th>
+                                                    {% if loop.first %}
+                                                    <table class="spacer">
+                                                        <tbody>
+                                                        <tr>
+                                                            <td height="20" style="font-size:20px;line-height:20px;"></td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    {% endif %}
+                                                    <a target="_blank" href="{{ pair.data }}">
+                                                        <center>
+                                                            <img src="{{ pair.img }}" alt="" align="center" class="float-center">
+                                                        </center>
+                                                    </a>
+                                                    <table class="spacer">
+                                                        <tbody>
+                                                        <tr>
+                                                            <td height="20" style="font-size:20px;line-height:20px;"></td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </th>
+                                                <th class="expander"></th>
+                                            </tr>
+                                        </table>
+                                    </th>
+                                </tr>
+                              </tbody>
+                            </table>
+                            {% endfor %}
+                            <table class="row">
+                              <tbody>
+                                <tr>
+                                  <th class="columns small-12 large-12 no-padding" valign="middle">
+                                    <table>
+                                      <tr>
+                                        <th>
+                                            <table class="wrapper" align="center">
+                                                <tr>
+                                                    <td id="footer" class="wrapper-inner">
+                                                        <table class="spacer">
+                                                            <tbody>
+                                                            <tr>
+                                                                <td height="40" style="font-size:40px;line-height:40px;"></td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <h2 class="text-center">Connect with Us</h2>
+                                                        <p class="text-center">Unit No.1, Park Name, Area name, State,<br> Country code.</p>
+                                                        <table align="center" class="menu float-center">
+                                                          <tbody>
+                                                          <tr>
+                                                            <td>
+                                                              <table>
+                                                                <tbody>
+                                                                <tr>
+                                                                  <th class="menu-item float-center">
+                                                                    <a href="#"><img src="https://s3-sa-east-1.amazonaws.com/test-enzo-1234/facebook.png" alt=""></a>
+                                                                  </th>
+                                                                  <th class="menu-item float-center">
+                                                                    <a href="#"><img src="https://s3-sa-east-1.amazonaws.com/test-enzo-1234/twitter.png" alt=""></a>
+                                                                  </th>
+                                                                  <th class="menu-item float-center">
+                                                                    <a href="#"><img src="https://s3-sa-east-1.amazonaws.com/test-enzo-1234/linkedin.png" alt=""></a>
+                                                                  </th>
+                                                                </tr>
+                                                              </tbody></table>
+                                                            </td>
+                                                          </tr>
+                                                        </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </th>
+                                      </tr>
+                                    </table>
+                                  </th>
+                                </tr>
+                              </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </center>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

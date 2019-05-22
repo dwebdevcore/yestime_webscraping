@@ -1,0 +1,23 @@
+{
+  "name": "poc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "phantomjs-prebuilt": "^2.1.14"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ebredy/yestime-recommender.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ebredy/yestime-recommender/issues"
+  },
+  "homepage": "https://github.com/ebredy/yestime-recommender#readme"
+}

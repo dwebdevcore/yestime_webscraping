@@ -1,0 +1,7 @@
+jupyter
+pandas
+numpy
+flask-debugtoolbar
+nose2
+pytest
+mockredispy
